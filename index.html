@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to My Bank</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>💰 Welcome to My Bank 💰</h1>
+        <div class="nav">
+            <a href="/create">Create Account</a>
+            <a href="/balance">Check Balance</a>
+            <a href="/transaction">Deposit / Withdraw</a>
+            <a href="/history">Transaction History</a>
+        </div>
+    </div>
+</body>
+</html>

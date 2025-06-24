@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Transaction History</h2>
+        {% if transactions is not defined %}
+        <form method="post">
+            <input type="text" name="name" placeholder="Your Name" required><br><br>
+            <button type="submit">View History</button>
+        </form>
+        {% else %}
+        <h3>{{ name }}</h3>
+        <ul>
+            {% for t in transactions %}
+            <li>{{ t[0] }}: ₹{{ t[1] }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <a href="/">Back</a>
+    </div>
+</body>
+</html>
