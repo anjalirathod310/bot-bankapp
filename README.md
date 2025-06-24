@@ -1,4 +1,4 @@
-# bot-bankapp using doker with a  simple ui
+# bankapp using doker with a  simple ui
 ## 🎯 Objective
 To develop a simple, web-based Bank Application that allows users to:
 
